@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo {
+  animation: changeColor 5s infinite linear; 
+  user-select: none;
+}
+
+body{
+  background: url('https://wallpaperaccess.com/full/3492868.gif');
+}
+
+@keyframes changeColor {
+  0% { color: #ff0000; } 
+  25% { color: #00ff00; } 
+  50% { color: #0000ff; }
+  75% { color: #ffff00; } 
+  100% { color: #ff00ff; } 
 }
